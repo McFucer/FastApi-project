@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get('/api/{name}/{age}')
 async def get_ibninfo(name: str,
-                      age: int):
+                     age: int):
     return {'name':name,
             'age':age}
 @app.get('/api/{id}')
