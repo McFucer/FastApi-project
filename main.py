@@ -24,7 +24,7 @@ async def post(name: str,
 
 db_ns = []
 
-@app.post('/api/{name}/{surname}')
+@app.post('/api/{name}/{l_name}')
 async def NS(name: str,
              l_name: str):
     db_ns = {'name':name.lower(),
